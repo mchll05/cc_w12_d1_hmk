@@ -9,45 +9,39 @@
   <body>
     <h1 id="heading">Add to Reading List</h1>
 
-  <h3>Title:</h3><input id="title" type="text" />
+  <form id="form">
 
-  <h3>Author:</h3><input id="author" type="text" />
+<label>Title:</label>
+<input id="title" type="text" required>
 
-  <form>
-  <h3>Category</h3>
-  <div>
-    <input type="radio" id="book"
-     name="book" value="book">
-    <label for="book">Book</label>
+<label>Author:</label>
+<input id="author" type='text'>
 
-    <input type="radio" id="article"
-     name="article" value="article">
-    <label for="article">Article</label>
+<p>
+  <label>Category:</label>
+        <input type="radio" name="category" value="Book" required>
+        <label>Book</label>
 
-    <input type="radio" id="audiobook">
-    <label for="audiobook">Audiobook</label>
-  </div>
-  <div>
-    <button type="submit">Submit</button>
-  </div>
-</form>
+        <input type="radio" name="category" value="Article" required>
+        <label>Article</label>
 
-  <h3>Genre:</h3>
-    <select id="select">
-      <option disabled selected>Choose Genre</option>
-      <option value="romance">Romance</option>
-      <option value="non-fiction">Non Fiction</option>
-      <option value="horror">Horror</option>
-    </select>
+        <input type="radio" name="category" value="Blog post" required>
+        <label>Blog Post</label></p>
+
+        <label>Genre</label>
+            <select id='genre' required>
+              <option value='Romance'>Romance</option>
+              <option value='Non-fiction'>Non fiction</option>
+              <option value='Sci-Fi'>Sci-Fi</option>
+            </select>
+
+            <button type="submit" name="button">Submit</button>
+
+          </form>
 
 <p><br></p>
-    <hr></hr>
 
-<h2>Book Added:</h2>
-<p id="title-result">Nothing has been typed yet.</p>
-<p id="author-result">Nothing has been typed yet.</p>
-<p id="category-result">No choice has been made.</p>
-<p id="genre-result">No choice has been made.</p>
+  <p id="form-result">Add here</p>
 
   </body>
 </html>
